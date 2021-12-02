@@ -14,15 +14,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     let mut horizontal: isize = 0;
     let mut depth: isize = 0;
     let mut aim: isize = 0;
-    // let demo: Vec<Result<&str, ()>> = vec![
-    //     Ok("forward 5"),
-    //     Ok("down 5"),
-    //     Ok("forward 8"),
-    //     Ok("up 3"),
-    //     Ok("down 8"),
-    //     Ok("forward 2"),
-    // ];
-    //for line in demo {
+    
     for line in path_to_lines("input")? {
         if let Ok(line) = line {
             let tokens = line.split(' ').collect::<Vec<&str>>();
